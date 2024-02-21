@@ -62,11 +62,11 @@ imagesc(time, fois, slt3);
 set(gca, 'ydir', 'normal');
 colormap jet;
 % 
-% subplot(1, 2, 2);
-% slt5 = faslt(xSignal, fs, fois, 5, srord, 0);
-% imagesc(time, fois, slt5);
-% set(gca, 'ydir', 'normal');
-% colormap jet;
+subplot(1, 2, 2);
+slt5 = faslt(xSignal, fs, fois, 9, srord, 0);
+imagesc(time, fois, slt5);
+set(gca, 'ydir', 'normal');
+colormap jet;
 
 slt20 = slt3(find(fois == 20), :);
 slt40 = slt3(find(fois == 40), :);
